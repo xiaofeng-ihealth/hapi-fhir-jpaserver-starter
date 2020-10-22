@@ -1,10 +1,9 @@
 spring:
-  datasource:
-    url: 'jdbc:h2:file:./target/database/h2'
-    username: sa
-    password: null
-    driverClassName: org.h2.Driver
-    max-active: 15
+    datasource:
+      url: 'jdbc:mysql://hapi-fhir-mysql:3306/hapi'
+      username: admin
+      password: admin
+      driverClassName: com.mysql.jdbc.Driver
   profiles:
     ### This is the FHIR version. Choose between, dstu2, dstu3, r4 or r5
     active: r4
